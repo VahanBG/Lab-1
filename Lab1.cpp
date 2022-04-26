@@ -51,8 +51,7 @@ int main (int argc, char *argv[])
         fout.open(path1);
         if(!fout.is_open())
          {std::cout<<"nor file chi stexcvel"<<std::endl;}
-         else{fout<<capital(str2
-                         );}
+         else{fout<<capital(str2);}
                fout.close() ;
         }
 
