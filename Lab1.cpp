@@ -1,6 +1,5 @@
 #include <string>
 #include<iostream>
-#include <stdio.h>
 #include<cstring> 
 #include<fstream>
 std::string capital(std::string word)
