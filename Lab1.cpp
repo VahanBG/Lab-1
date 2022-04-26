@@ -38,19 +38,26 @@ int main (int argc, char *argv[])
         {
         std::cout<<"The file you selected was successfully uploaded"<<std::endl;
         std::string str1;
+        std::string str2="";
         while(!fin.eof())
               {
                 str1 = "";
-                getline(fin,str1);
-                std::cout<<capital(str1);
+               getline(fin,str1);
+               std::cout<<str1;
+               str2+=str1;
               }
+
+        std::ofstream fout;
+        fout.open(path1);
+        if(!fout.is_open())
+         {std::cout<<"nor file chi stexcvel"<<std::endl;}
+         else{fout<<capital(str2
+                         );}
+               fout.close() ;
         }
- 
-        	
-	
-	fin.close();
-    
-    
+
+                fin.close();
+
     
     return 0;
 }
