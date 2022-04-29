@@ -4,7 +4,7 @@
 #include<fstream>
 std::string capital(std::string word)
 {
-        std::string word1=word;
+        
        int size = word.length();
        if ((word[0]>='a')&&(word[0]<='z')){word[0]=word[0]-32;}
        for(int i = 1;i<size;i++)
